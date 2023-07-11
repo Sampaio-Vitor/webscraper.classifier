@@ -9,7 +9,7 @@ O objetivo deste repositório é desenvolver um app capaz de captar vagas do lin
 O algoritmo classificará as vagas encontradas através de machine learning - o modelo será desenvolvido em breve. 
 
 ## Sequencial de desenvolvimento
-    1) Scrape inicial de vagas pela pesquisa por "vagas";
+    1) Scrape inicial de vagas pela pesquisa por "vagas"; ✅
     2) Classificação manual das vagas encontradas, entre 0 e 2, onde:
         0 -> Vaga não relevante
         1 -> Vaga Relevante
