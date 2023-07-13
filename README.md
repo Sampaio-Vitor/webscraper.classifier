@@ -15,7 +15,7 @@ O algoritmo classificará as vagas encontradas através de machine learning - o 
         1 -> Vaga Relevante
         2 - Vaga muito relevante
     3) Treinar o modelo de classificação - Inicialmente utilizarei Naive-Bayes, XG-boost e Random Forests para classificação.✅ 
-            O modelo que performar melhor de acordo com as métricas será o selecionado;
+            O modelo que performar melhor de acordo com as métricas será o selecionado;✅
     4)Desenvolver o scraper que será rodado diariamente na nuvem;
     5)Desenvolver template de e-mail HTML e o módulo que envia diariamente;
     6) Subir o código para uma instacia EC2, e programar a execução do código diariamente;
