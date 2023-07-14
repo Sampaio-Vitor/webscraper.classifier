@@ -1,24 +1,32 @@
-# WebScraper de vagas de dados em grandes empresas + classificação textual 
-
-
-###### Work in progress
+# WebScraper de vagas de dados + Classificação textual com XGBoost
 
 ## Objetivo
 
-O objetivo deste repositório é desenvolver um app capaz de captar vagas do linkedin a partir de uma pesquisa, armazena-las em um csv, e diariamente ser rodado na nuvem (AWS). 
-O algoritmo classificará as vagas encontradas através de machine learning - o modelo será desenvolvido em breve. 
+Este projeto consiste em um aplicativo desenvolvido para automatizar a busca por vagas no campo de dados em grandes empresas, utilizando o LinkedIn como plataforma de pesquisa. A aplicação é capaz de captar vagas, classificá-las de acordo com a sua relevância utilizando Machine Learning, e então enviar um e-mail diariamente com as vagas mais relevantes.
+
+O processo é executado na nuvem (AWS), permitindo uma busca e análise constantes sem a necessidade de interação manual constante.
+
+## Funcionalidades
+
+- **Web Scraping:** A aplicação raspa as vagas listadas no LinkedIn com base em uma consulta predefinida, armazenando os resultados em um arquivo CSV.
+
+- **Classificação de Vagas:** Utilizando um modelo de Machine Learning treinado previamente (XGBoost), a aplicação classifica as vagas raspadas de acordo com a sua relevância.
+
+- **Notificação por e-mail:** A aplicação envia diariamente um e-mail para o usuário com as vagas mais relevantes encontradas.
 
 ## Sequencial de desenvolvimento
-    1) Scrape inicial de vagas pela pesquisa por "vagas"; ✅
-    2) Classificação manual das vagas encontradas, entre 0 e 2, onde:✅
-        0 -> Vaga não relevante
-        1 -> Vaga Relevante
-        2 - Vaga muito relevante
-    3) Treinar o modelo de classificação - Inicialmente utilizarei Naive-Bayes, XG-boost e Random Forests para classificação.✅ 
-            O modelo que performar melhor de acordo com as métricas será o selecionado;✅
-    4)Desenvolver o scraper que será rodado diariamente na nuvem;
-    5)Desenvolver template de e-mail HTML e o módulo que envia diariamente;
-    6) Subir o código para uma instacia EC2, e programar a execução do código diariamente;
-    7) Conseguir uma vaga como cientista de dados 😀
+
+1) Realização do scraping inicial de vagas pela pesquisa por "("(data science)" OR "cientista de dados)" OR "machine learning")"; 
+2) Classificação manual das vagas encontradas, entre 0 e 2, onde:
+    - 0: Vaga não relevante
+    - 1: Vaga Relevante
+    - 2: Vaga muito relevante
+3) Treinamento do modelo de classificação: Manualmente fiz o label de todas as vagas encontradas (400+), depois foi treinado um modelo XGBoost para classificação baseado nas minhas labels.
+4) Desenvolvimento do scraper a ser executado diariamente na nuvem;
+5) Desenvolvimento do template de e-mail HTML e do módulo que envia e-mails diariamente;
+6) Subida do código para uma instância EC2, programando a execução do código diariamente;
+7) Obtenção de uma vaga como cientista de dados como resultado final! 🎉
+
 ## Contribuição
-Fique a vontade para contribuir neste projeto e usa-lo como desejar, com suas devidas adaptações.
+
+Sinta-se à vontade para contribuir para este projeto e usá-lo como desejar, com as devidas adaptações. Seu feedback e contribuições são muito apreciados.
